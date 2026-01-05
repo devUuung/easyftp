@@ -16,27 +16,22 @@ macOS FTP/SFTP/SMB 클라이언트 - CyberDuck 대체용
 
 ## Installation
 
-### Download
+### Homebrew (권장)
 
-[Releases](https://github.com/devUuung/easyftp/releases)에서 DMG 파일 다운로드
-
-### macOS Gatekeeper 우회 (필수)
-
-앱이 서명되지 않아서 "손상된 파일" 경고가 뜰 수 있어요.
-
-**방법 1: 터미널 명령어**
 ```bash
-# DMG 다운로드 후
-xattr -cr ~/Downloads/EasyFTP_*.dmg
-
-# 또는 앱 설치 후
-xattr -cr /Applications/EasyFTP.app
+brew tap devUuung/tap
+brew install --cask easyftp
 ```
 
-**방법 2: 시스템 설정**
-1. DMG 열고 앱을 Applications로 드래그
-2. 앱 실행 시 경고 뜨면 취소
-3. 시스템 설정 → 개인 정보 보호 및 보안 → 하단에 "확인 없이 열기" 클릭
+### 수동 설치
+
+[Releases](https://github.com/devUuung/easyftp/releases)에서 DMG 다운로드 후:
+
+```bash
+xattr -cr ~/Downloads/EasyFTP_*.dmg
+```
+
+DMG 열고 앱을 Applications로 드래그
 
 ## Build from Source
 
